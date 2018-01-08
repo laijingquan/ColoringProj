@@ -1,0 +1,1667 @@
+; FBX 7.1.0 project file
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7100
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2018
+		Month: 1
+		Day: 8
+		Hour: 16
+		Minute: 56
+		Second: 20
+		Millisecond: 744
+	}
+	Creator: "Unity Studio by Chipicao"
+}
+
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",2.54
+		P: "OriginalUnitScaleFactor", "double", "Number", "",1.0
+	}
+}
+
+Documents:  {
+	Count: 1
+	Document: 1234567890, "", "Scene" {
+		Properties70:  {
+			P: "SourceObject", "object", "", ""
+			P: "ActiveAnimStackName", "KString", "", "", ""
+		}
+		RootNode: 0
+	}
+}
+
+References:  {
+}
+
+Definitions:  {
+	Version: 100
+	Count: 164
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "Model" {
+		Count: 81
+	}
+	ObjectType: "NodeAttribute" {
+		Count: 81
+		PropertyTemplate: "FbxNull" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "Size", "double", "Number", "",100
+				P: "Look", "enum", "", "",1
+			}
+		}
+	}
+	ObjectType: "Geometry" {
+		Count: 0
+	}
+	ObjectType: "Material" {
+		Count: 0
+	}
+	ObjectType: "Texture" {
+		Count: 0
+	}
+	ObjectType: "Video" {
+		Count: 0
+	}
+	ObjectType: "CollectionExclusive" {
+		Count: 0
+		PropertyTemplate: "FbxDisplayLayer" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "Show", "bool", "", "",1
+				P: "Freeze", "bool", "", "",0
+				P: "LODBox", "bool", "", "",0
+			}
+		}
+	}
+	ObjectType: "Deformer" {
+		Count: 0
+	}
+	ObjectType: "Pose" {
+		Count: 1
+	}
+}
+
+Objects:  {
+	NodeAttribute: 20002000, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002000, "Model::GameAnalytics", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002001, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002001, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002002, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002002, "Model::Back", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002003, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002003, "Model::EventSystem", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002004, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002004, "Model::Canvas", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002005, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002005, "Model::MainScreen", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002006, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002006, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002007, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002007, "Model::Scripts", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-400,640,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002008, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002008, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002009, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002009, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002010, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002010, "Model::Shop", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002011, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002011, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002012, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002012, "Model::Main Camera", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,-10
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002013, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002013, "Model::Share", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002014, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002014, "Model::Rate", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002015, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002015, "Model::Title", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002016, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002016, "Model::Text (1)", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002017, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002017, "Model::Text (1)", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002018, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002018, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002019, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002019, "Model::Panel", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002020, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002020, "Model::Panel", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002021, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002021, "Model::ShopPannel", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002022, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002022, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002023, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002023, "Model::ShopPannelScreen", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002024, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002024, "Model::Back", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002025, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002025, "Model::ImageSelect", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002026, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002026, "Model::Main", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002027, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002027, "Model::SharingPanel", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002028, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002028, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002029, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002029, "Model::Text (1)", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002030, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002030, "Model::Like", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002031, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002031, "Model::Play", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002032, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002032, "Model::Brush", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002033, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002033, "Model::SingleTemp", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002034, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002034, "Model::Handle", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002035, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002035, "Model::Icon", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002036, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002036, "Model::End", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002037, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002037, "Model::Demo", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002038, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002038, "Model::Sliding Area", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002039, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002039, "Model::Content", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002040, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002040, "Model::Restore", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002041, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002041, "Model::2", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002042, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002042, "Model::Icon", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002043, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002043, "Model::Scrollbar", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002044, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002044, "Model::Scroller", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002045, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002045, "Model::Content", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002046, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002046, "Model::Message", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002047, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002047, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002048, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002048, "Model::Scroll", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002049, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002049, "Model::MessagePanel", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002050, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002050, "Model::More", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002051, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002051, "Model::5", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002052, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002052, "Model::6", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002053, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002053, "Model::RemoveAds", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002054, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002054, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002055, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002055, "Model::Complex", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002056, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002056, "Model::Hand", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002057, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002057, "Model::Pic", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002058, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002058, "Model::Back", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002059, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002059, "Model::Tutorial", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002060, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002060, "Model::Icon", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002061, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002061, "Model::Icon", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002062, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002062, "Model::4", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002063, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002063, "Model::Icon", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002064, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002064, "Model::placeholder", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002065, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002065, "Model::MoreApps", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002066, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002066, "Model::Tutorial", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002067, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002067, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002068, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002068, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002069, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002069, "Model::Icon", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002070, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002070, "Model::Tutorial", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002071, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002071, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002072, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002072, "Model::Panel", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002073, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002073, "Model::Temp", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002074, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002074, "Model::Note", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002075, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002075, "Model::Text (1)", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002076, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002076, "Model::Got It", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002077, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002077, "Model::3", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002078, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002078, "Model::LoadingPanel", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002079, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002079, "Model::1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 20002080, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 10002080, "Model::Text", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	Pose: 5123456789, "Pose::BIND_POSES", "BindPose" {
+		Type: "BindPose"
+		Version: 100
+		NbPoseNodes: 0
+	}
+}
+
+Connections:  {
+
+	;NodeAttribute::, Model::GameAnalytics
+	C: "OO",20002000,10002000
+
+	;Model::GameAnalytics, Model::RootNode
+	C: "OO",10002000,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002001,10002001
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002001,0
+
+	;NodeAttribute::, Model::Back
+	C: "OO",20002002,10002002
+
+	;Model::Back, Model::RootNode
+	C: "OO",10002002,0
+
+	;NodeAttribute::, Model::EventSystem
+	C: "OO",20002003,10002003
+
+	;Model::EventSystem, Model::RootNode
+	C: "OO",10002003,0
+
+	;NodeAttribute::, Model::Canvas
+	C: "OO",20002004,10002004
+
+	;Model::Canvas, Model::RootNode
+	C: "OO",10002004,0
+
+	;NodeAttribute::, Model::MainScreen
+	C: "OO",20002005,10002005
+
+	;Model::MainScreen, Model::RootNode
+	C: "OO",10002005,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002006,10002006
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002006,0
+
+	;NodeAttribute::, Model::Scripts
+	C: "OO",20002007,10002007
+
+	;Model::Scripts, Model::RootNode
+	C: "OO",10002007,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002008,10002008
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002008,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002009,10002009
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002009,0
+
+	;NodeAttribute::, Model::Shop
+	C: "OO",20002010,10002010
+
+	;Model::Shop, Model::RootNode
+	C: "OO",10002010,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002011,10002011
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002011,0
+
+	;NodeAttribute::, Model::Main Camera
+	C: "OO",20002012,10002012
+
+	;Model::Main Camera, Model::RootNode
+	C: "OO",10002012,0
+
+	;NodeAttribute::, Model::Share
+	C: "OO",20002013,10002013
+
+	;Model::Share, Model::RootNode
+	C: "OO",10002013,0
+
+	;NodeAttribute::, Model::Rate
+	C: "OO",20002014,10002014
+
+	;Model::Rate, Model::RootNode
+	C: "OO",10002014,0
+
+	;NodeAttribute::, Model::Title
+	C: "OO",20002015,10002015
+
+	;Model::Title, Model::RootNode
+	C: "OO",10002015,0
+
+	;NodeAttribute::, Model::Text (1)
+	C: "OO",20002016,10002016
+
+	;Model::Text (1), Model::RootNode
+	C: "OO",10002016,0
+
+	;NodeAttribute::, Model::Text (1)
+	C: "OO",20002017,10002017
+
+	;Model::Text (1), Model::RootNode
+	C: "OO",10002017,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002018,10002018
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002018,0
+
+	;NodeAttribute::, Model::Panel
+	C: "OO",20002019,10002019
+
+	;Model::Panel, Model::RootNode
+	C: "OO",10002019,0
+
+	;NodeAttribute::, Model::Panel
+	C: "OO",20002020,10002020
+
+	;Model::Panel, Model::RootNode
+	C: "OO",10002020,0
+
+	;NodeAttribute::, Model::ShopPannel
+	C: "OO",20002021,10002021
+
+	;Model::ShopPannel, Model::RootNode
+	C: "OO",10002021,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002022,10002022
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002022,0
+
+	;NodeAttribute::, Model::ShopPannelScreen
+	C: "OO",20002023,10002023
+
+	;Model::ShopPannelScreen, Model::RootNode
+	C: "OO",10002023,0
+
+	;NodeAttribute::, Model::Back
+	C: "OO",20002024,10002024
+
+	;Model::Back, Model::RootNode
+	C: "OO",10002024,0
+
+	;NodeAttribute::, Model::ImageSelect
+	C: "OO",20002025,10002025
+
+	;Model::ImageSelect, Model::RootNode
+	C: "OO",10002025,0
+
+	;NodeAttribute::, Model::Main
+	C: "OO",20002026,10002026
+
+	;Model::Main, Model::RootNode
+	C: "OO",10002026,0
+
+	;NodeAttribute::, Model::SharingPanel
+	C: "OO",20002027,10002027
+
+	;Model::SharingPanel, Model::RootNode
+	C: "OO",10002027,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002028,10002028
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002028,0
+
+	;NodeAttribute::, Model::Text (1)
+	C: "OO",20002029,10002029
+
+	;Model::Text (1), Model::RootNode
+	C: "OO",10002029,0
+
+	;NodeAttribute::, Model::Like
+	C: "OO",20002030,10002030
+
+	;Model::Like, Model::RootNode
+	C: "OO",10002030,0
+
+	;NodeAttribute::, Model::Play
+	C: "OO",20002031,10002031
+
+	;Model::Play, Model::RootNode
+	C: "OO",10002031,0
+
+	;NodeAttribute::, Model::Brush
+	C: "OO",20002032,10002032
+
+	;Model::Brush, Model::RootNode
+	C: "OO",10002032,0
+
+	;NodeAttribute::, Model::SingleTemp
+	C: "OO",20002033,10002033
+
+	;Model::SingleTemp, Model::RootNode
+	C: "OO",10002033,0
+
+	;NodeAttribute::, Model::Handle
+	C: "OO",20002034,10002034
+
+	;Model::Handle, Model::RootNode
+	C: "OO",10002034,0
+
+	;NodeAttribute::, Model::Icon
+	C: "OO",20002035,10002035
+
+	;Model::Icon, Model::RootNode
+	C: "OO",10002035,0
+
+	;NodeAttribute::, Model::End
+	C: "OO",20002036,10002036
+
+	;Model::End, Model::RootNode
+	C: "OO",10002036,0
+
+	;NodeAttribute::, Model::Demo
+	C: "OO",20002037,10002037
+
+	;Model::Demo, Model::RootNode
+	C: "OO",10002037,0
+
+	;NodeAttribute::, Model::Sliding Area
+	C: "OO",20002038,10002038
+
+	;Model::Sliding Area, Model::RootNode
+	C: "OO",10002038,0
+
+	;NodeAttribute::, Model::Content
+	C: "OO",20002039,10002039
+
+	;Model::Content, Model::RootNode
+	C: "OO",10002039,0
+
+	;NodeAttribute::, Model::Restore
+	C: "OO",20002040,10002040
+
+	;Model::Restore, Model::RootNode
+	C: "OO",10002040,0
+
+	;NodeAttribute::, Model::2
+	C: "OO",20002041,10002041
+
+	;Model::2, Model::RootNode
+	C: "OO",10002041,0
+
+	;NodeAttribute::, Model::Icon
+	C: "OO",20002042,10002042
+
+	;Model::Icon, Model::RootNode
+	C: "OO",10002042,0
+
+	;NodeAttribute::, Model::Scrollbar
+	C: "OO",20002043,10002043
+
+	;Model::Scrollbar, Model::RootNode
+	C: "OO",10002043,0
+
+	;NodeAttribute::, Model::Scroller
+	C: "OO",20002044,10002044
+
+	;Model::Scroller, Model::RootNode
+	C: "OO",10002044,0
+
+	;NodeAttribute::, Model::Content
+	C: "OO",20002045,10002045
+
+	;Model::Content, Model::RootNode
+	C: "OO",10002045,0
+
+	;NodeAttribute::, Model::Message
+	C: "OO",20002046,10002046
+
+	;Model::Message, Model::RootNode
+	C: "OO",10002046,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002047,10002047
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002047,0
+
+	;NodeAttribute::, Model::Scroll
+	C: "OO",20002048,10002048
+
+	;Model::Scroll, Model::RootNode
+	C: "OO",10002048,0
+
+	;NodeAttribute::, Model::MessagePanel
+	C: "OO",20002049,10002049
+
+	;Model::MessagePanel, Model::RootNode
+	C: "OO",10002049,0
+
+	;NodeAttribute::, Model::More
+	C: "OO",20002050,10002050
+
+	;Model::More, Model::RootNode
+	C: "OO",10002050,0
+
+	;NodeAttribute::, Model::5
+	C: "OO",20002051,10002051
+
+	;Model::5, Model::RootNode
+	C: "OO",10002051,0
+
+	;NodeAttribute::, Model::6
+	C: "OO",20002052,10002052
+
+	;Model::6, Model::RootNode
+	C: "OO",10002052,0
+
+	;NodeAttribute::, Model::RemoveAds
+	C: "OO",20002053,10002053
+
+	;Model::RemoveAds, Model::RootNode
+	C: "OO",10002053,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002054,10002054
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002054,0
+
+	;NodeAttribute::, Model::Complex
+	C: "OO",20002055,10002055
+
+	;Model::Complex, Model::RootNode
+	C: "OO",10002055,0
+
+	;NodeAttribute::, Model::Hand
+	C: "OO",20002056,10002056
+
+	;Model::Hand, Model::RootNode
+	C: "OO",10002056,0
+
+	;NodeAttribute::, Model::Pic
+	C: "OO",20002057,10002057
+
+	;Model::Pic, Model::RootNode
+	C: "OO",10002057,0
+
+	;NodeAttribute::, Model::Back
+	C: "OO",20002058,10002058
+
+	;Model::Back, Model::RootNode
+	C: "OO",10002058,0
+
+	;NodeAttribute::, Model::Tutorial
+	C: "OO",20002059,10002059
+
+	;Model::Tutorial, Model::RootNode
+	C: "OO",10002059,0
+
+	;NodeAttribute::, Model::Icon
+	C: "OO",20002060,10002060
+
+	;Model::Icon, Model::RootNode
+	C: "OO",10002060,0
+
+	;NodeAttribute::, Model::Icon
+	C: "OO",20002061,10002061
+
+	;Model::Icon, Model::RootNode
+	C: "OO",10002061,0
+
+	;NodeAttribute::, Model::4
+	C: "OO",20002062,10002062
+
+	;Model::4, Model::RootNode
+	C: "OO",10002062,0
+
+	;NodeAttribute::, Model::Icon
+	C: "OO",20002063,10002063
+
+	;Model::Icon, Model::RootNode
+	C: "OO",10002063,0
+
+	;NodeAttribute::, Model::placeholder
+	C: "OO",20002064,10002064
+
+	;Model::placeholder, Model::RootNode
+	C: "OO",10002064,0
+
+	;NodeAttribute::, Model::MoreApps
+	C: "OO",20002065,10002065
+
+	;Model::MoreApps, Model::RootNode
+	C: "OO",10002065,0
+
+	;NodeAttribute::, Model::Tutorial
+	C: "OO",20002066,10002066
+
+	;Model::Tutorial, Model::RootNode
+	C: "OO",10002066,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002067,10002067
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002067,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002068,10002068
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002068,0
+
+	;NodeAttribute::, Model::Icon
+	C: "OO",20002069,10002069
+
+	;Model::Icon, Model::RootNode
+	C: "OO",10002069,0
+
+	;NodeAttribute::, Model::Tutorial
+	C: "OO",20002070,10002070
+
+	;Model::Tutorial, Model::RootNode
+	C: "OO",10002070,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002071,10002071
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002071,0
+
+	;NodeAttribute::, Model::Panel
+	C: "OO",20002072,10002072
+
+	;Model::Panel, Model::RootNode
+	C: "OO",10002072,0
+
+	;NodeAttribute::, Model::Temp
+	C: "OO",20002073,10002073
+
+	;Model::Temp, Model::RootNode
+	C: "OO",10002073,0
+
+	;NodeAttribute::, Model::Note
+	C: "OO",20002074,10002074
+
+	;Model::Note, Model::RootNode
+	C: "OO",10002074,0
+
+	;NodeAttribute::, Model::Text (1)
+	C: "OO",20002075,10002075
+
+	;Model::Text (1), Model::RootNode
+	C: "OO",10002075,0
+
+	;NodeAttribute::, Model::Got It
+	C: "OO",20002076,10002076
+
+	;Model::Got It, Model::RootNode
+	C: "OO",10002076,0
+
+	;NodeAttribute::, Model::3
+	C: "OO",20002077,10002077
+
+	;Model::3, Model::RootNode
+	C: "OO",10002077,0
+
+	;NodeAttribute::, Model::LoadingPanel
+	C: "OO",20002078,10002078
+
+	;Model::LoadingPanel, Model::RootNode
+	C: "OO",10002078,0
+
+	;NodeAttribute::, Model::1
+	C: "OO",20002079,10002079
+
+	;Model::1, Model::RootNode
+	C: "OO",10002079,0
+
+	;NodeAttribute::, Model::Text
+	C: "OO",20002080,10002080
+
+	;Model::Text, Model::RootNode
+	C: "OO",10002080,0
+}

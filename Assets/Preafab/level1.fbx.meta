@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 6f8c9e8f25516cf4488c15de5913858e
+timeCreated: 1515401783
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 1
+    100002: 2
+    100004: 3
+    100006: 4
+    100008: 5
+    100010: 6
+    100012: Back
+    100014: Back 1
+    100016: Back 2
+    100018: Brush
+    100020: Canvas
+    100022: Complex
+    100024: Content
+    100026: Content 1
+    100028: Demo
+    100030: End
+    100032: EventSystem
+    100034: GameAnalytics
+    100036: Got It
+    100038: Hand
+    100040: Handle
+    100042: Icon
+    100044: Icon 1
+    100046: Icon 2
+    100048: Icon 3
+    100050: Icon 4
+    100052: Icon 5
+    100054: ImageSelect
+    100056: //RootNode
+    100058: Like
+    100060: LoadingPanel
+    100062: Main
+    100064: Main Camera
+    100066: MainScreen
+    100068: Message
+    100070: MessagePanel
+    100072: More
+    100074: MoreApps
+    100076: Note
+    100078: Panel
+    100080: Panel 1
+    100082: Panel 2
+    100084: Pic
+    100086: placeholder
+    100088: Play
+    100090: Rate
+    100092: RemoveAds
+    100094: Restore
+    100096: Scripts
+    100098: Scroll
+    100100: Scrollbar
+    100102: Scroller
+    100104: Share
+    100106: SharingPanel
+    100108: Shop
+    100110: ShopPannel
+    100112: ShopPannelScreen
+    100114: SingleTemp
+    100116: Sliding Area
+    100118: Temp
+    100120: Text
+    100122: Text (1)
+    100124: Text (1) 1
+    100126: Text (1) 2
+    100128: Text (1) 3
+    100130: Text 1
+    100132: Text 10
+    100134: Text 11
+    100136: Text 12
+    100138: Text 13
+    100140: Text 2
+    100142: Text 3
+    100144: Text 4
+    100146: Text 5
+    100148: Text 6
+    100150: Text 7
+    100152: Text 8
+    100154: Text 9
+    100156: Title
+    100158: Tutorial
+    100160: Tutorial 1
+    100162: Tutorial 2
+    400000: 1
+    400002: 2
+    400004: 3
+    400006: 4
+    400008: 5
+    400010: 6
+    400012: Back
+    400014: Back 1
+    400016: Back 2
+    400018: Brush
+    400020: Canvas
+    400022: Complex
+    400024: Content
+    400026: Content 1
+    400028: Demo
+    400030: End
+    400032: EventSystem
+    400034: GameAnalytics
+    400036: Got It
+    400038: Hand
+    400040: Handle
+    400042: Icon
+    400044: Icon 1
+    400046: Icon 2
+    400048: Icon 3
+    400050: Icon 4
+    400052: Icon 5
+    400054: ImageSelect
+    400056: //RootNode
+    400058: Like
+    400060: LoadingPanel
+    400062: Main
+    400064: Main Camera
+    400066: MainScreen
+    400068: Message
+    400070: MessagePanel
+    400072: More
+    400074: MoreApps
+    400076: Note
+    400078: Panel
+    400080: Panel 1
+    400082: Panel 2
+    400084: Pic
+    400086: placeholder
+    400088: Play
+    400090: Rate
+    400092: RemoveAds
+    400094: Restore
+    400096: Scripts
+    400098: Scroll
+    400100: Scrollbar
+    400102: Scroller
+    400104: Share
+    400106: SharingPanel
+    400108: Shop
+    400110: ShopPannel
+    400112: ShopPannelScreen
+    400114: SingleTemp
+    400116: Sliding Area
+    400118: Temp
+    400120: Text
+    400122: Text (1)
+    400124: Text (1) 1
+    400126: Text (1) 2
+    400128: Text (1) 3
+    400130: Text 1
+    400132: Text 10
+    400134: Text 11
+    400136: Text 12
+    400138: Text 13
+    400140: Text 2
+    400142: Text 3
+    400144: Text 4
+    400146: Text 5
+    400148: Text 6
+    400150: Text 7
+    400152: Text 8
+    400154: Text 9
+    400156: Title
+    400158: Tutorial
+    400160: Tutorial 1
+    400162: Tutorial 2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,215 @@
+fileFormatVersion: 2
+guid: 4f8c0116cbd6f1a4d997495933e208e3
+timeCreated: 1515402244
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Back
+    100002: background 2
+    100004: BG
+    100006: Brush
+    100008: BrushPaint
+    100010: Button
+    100012: Button (1)
+    100014: Canvas
+    100016: Canvas 1
+    100018: Color
+    100020: ColorButton
+    100022: ColorPallet
+    100024: CompletePanel
+    100026: Description
+    100028: Directional Light
+    100030: End
+    100032: EventSystem
+    100034: GameObject
+    100036: Got It
+    100038: Got It 1
+    100040: Grey
+    100042: Gri
+    100044: Hand
+    100046: Hearts
+    100048: ImageBoard
+    100050: //RootNode
+    100052: Main Camera
+    100054: manager
+    100056: MenuPanel
+    100058: NO
+    100060: Note
+    100062: Panel
+    100064: Particle
+    100066: Particles
+    100068: Pattern
+    100070: Pic
+    100072: Rate
+    100074: RatePanel
+    100076: RawImage
+    100078: Red
+    100080: Remind
+    100082: Save
+    100084: Save 1
+    100086: Share
+    100088: Share 1
+    100090: Text
+    100092: Text 1
+    100094: Text 10
+    100096: Text 11
+    100098: Text 12
+    100100: Text 13
+    100102: Text 14
+    100104: Text 15
+    100106: Text 16
+    100108: Text 2
+    100110: Text 3
+    100112: Text 4
+    100114: Text 5
+    100116: Text 6
+    100118: Text 7
+    100120: Text 8
+    100122: Text 9
+    100124: Title
+    100126: ToggleMenu
+    100128: Tutorial
+    100130: Tutorial 1
+    100132: Tutorial 2
+    100134: Violet
+    100136: WitchClr
+    100138: WitchGrey
+    100140: WitchParent
+    100142: Yes
+    400000: Back
+    400002: background 2
+    400004: BG
+    400006: Brush
+    400008: BrushPaint
+    400010: Button
+    400012: Button (1)
+    400014: Canvas
+    400016: Canvas 1
+    400018: Color
+    400020: ColorButton
+    400022: ColorPallet
+    400024: CompletePanel
+    400026: Description
+    400028: Directional Light
+    400030: End
+    400032: EventSystem
+    400034: GameObject
+    400036: Got It
+    400038: Got It 1
+    400040: Grey
+    400042: Gri
+    400044: Hand
+    400046: Hearts
+    400048: ImageBoard
+    400050: //RootNode
+    400052: Main Camera
+    400054: manager
+    400056: MenuPanel
+    400058: NO
+    400060: Note
+    400062: Panel
+    400064: Particle
+    400066: Particles
+    400068: Pattern
+    400070: Pic
+    400072: Rate
+    400074: RatePanel
+    400076: RawImage
+    400078: Red
+    400080: Remind
+    400082: Save
+    400084: Save 1
+    400086: Share
+    400088: Share 1
+    400090: Text
+    400092: Text 1
+    400094: Text 10
+    400096: Text 11
+    400098: Text 12
+    400100: Text 13
+    400102: Text 14
+    400104: Text 15
+    400106: Text 16
+    400108: Text 2
+    400110: Text 3
+    400112: Text 4
+    400114: Text 5
+    400116: Text 6
+    400118: Text 7
+    400120: Text 8
+    400122: Text 9
+    400124: Title
+    400126: ToggleMenu
+    400128: Tutorial
+    400130: Tutorial 1
+    400132: Tutorial 2
+    400134: Violet
+    400136: WitchClr
+    400138: WitchGrey
+    400140: WitchParent
+    400142: Yes
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
