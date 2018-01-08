@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Localization>
+  <Section>
+    <TextKey name="play">
+      <EN>Play</EN>
+      <FR>Jouer</FR>
+      <DE>abspielen</DE>
+      <IT>Giocare</IT>
+      <PT>Toque</PT>
+      <RU>Играть</RU>
+      <ES>Jugar</ES>
+      <AR>لعب</AR>
+    </TextKey>
+
+    <TextKey name="more">
+      <EN>More</EN>
+      <FR>Plus</FR>
+      <DE>Mehr</DE>
+      <IT>Di Più</IT>
+      <PT>Mais</PT>
+      <RU>Больше</RU>
+      <ES>Más</ES>
+      <AR>أكثر من</AR>
+    </TextKey>
+
+    <TextKey name="removeads">
+      <EN>Remove Ads</EN>
+      <FR>Supprimez la pub</FR>
+      <DE>Anzeigen entfernen</DE>
+      <IT>Rimuovere gli annunci</IT>
+      <PT>Remover propagandas</PT>
+      <RU>Убрать рекламу</RU>
+      <ES>Quitar anuncios</ES>
+      <AR>ازالة الاعلانات</AR>
+    </TextKey>
+
+    <TextKey name="restorepurchase">
+      <EN>Restore Purchase</EN>
+      <FR>restaurer Achat</FR>
+      <DE>wiederherstellen Kauf</DE>
+      <IT>Ripristinare acquisto</IT>
+      <PT>Restaurar compra</PT>
+      <RU>Восстановить покупку</RU>
+      <ES>restaurar Compra</ES>
+      <AR>استعادة شراء</AR>
+    </TextKey>
+
+    <TextKey name="back">
+      <EN>Back</EN>
+      <FR>Arrière</FR>
+      <DE>Zurück</DE>
+      <IT>Indietro</IT>
+      <PT>Costas</PT>
+      <RU>назад</RU>
+      <ES>Espalda</ES>
+      <AR>الى الخلف</AR>
+    </TextKey>
+
+    <TextKey name="lovethisapp">
+      <EN>Love This App</EN>
+      <FR>Love This App</FR>
+      <DE>Love This App</DE>
+      <IT>Love This App</IT>
+      <PT>Love This App</PT>
+      <RU>Любовь это приложение</RU>
+      <ES>Encanta esta aplicación</ES>
+      <AR>أحب هذا التطبيق</AR>
+    </TextKey>
+
+    <TextKey name="rateapp">
+      <EN>Would you like to rate this app?</EN>
+      <FR>Voulez-vous évaluer cette application?</FR>
+      <DE>Möchten Sie diese App bewerten?</DE>
+      <IT>Volete votare questa applicazione?</IT>
+      <PT>Gostaria de votar neste aplicativo?</PT>
+      <RU>Вы хотите, чтобы оценить это приложение?</RU>
+      <ES>¿Le gustaría calificar esta aplicación?</ES>
+      <AR>تريد أن تقيم هذا التطبيق؟</AR>
+    </TextKey>
+
+    <TextKey name="yes">
+      <EN>Yes</EN>
+      <FR>Oui</FR>
+      <DE>Ja</DE>
+      <IT>sì</IT>
+      <PT>sim</PT>
+      <RU>да</RU>
+      <ES>Sí</ES>
+      <AR>نعم فعلا</AR>
+    </TextKey>
+
+    <TextKey name="no">
+      <EN>No</EN>
+      <FR>Non</FR>
+      <DE>Nein</DE>
+      <IT>No</IT>
+      <PT>Não</PT>
+      <RU>нет</RU>
+      <ES>No</ES>
+      <AR>لا</AR>
+    </TextKey>
+
+    <TextKey name="remindlater">
+      <EN>Remind Later</EN>
+      <FR>Rappeler plus tard</FR>
+      <DE>Erinnere mich später</DE>
+      <IT>Ricorda in seguito</IT>
+      <PT>Lembrar mais tarde</PT>
+      <RU>Напомнить позже</RU>
+      <ES>Recordar más tarde</ES>
+      <AR>تذكر لاحقا</AR>
+    </TextKey>
+
+  </Section>
+</Localization>
