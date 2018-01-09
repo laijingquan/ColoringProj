@@ -8,6 +8,12 @@ using System.IO;
 
 public class UPASession {
 
+    /// <summary>
+    /// 创建图片数据有俩种方式，导入图片或者数据生成UPAImage,或者新建一个UIAImage
+    /// </summary>
+    /// <param name="w"></param>
+    /// <param name="h"></param>
+    /// <returns></returns>
 	public static UPAImage CreateImage (int w, int h) {
 		string path = EditorUtility.SaveFilePanel ("Create UPAImage",
 		                                           "Assets/", "Pixel Image.asset", "asset");
@@ -15,14 +21,14 @@ public class UPASession {
 			return null;
 		}
 		
-		path = FileUtil.GetProjectRelativePath(path);
+		path = FileUtil.GetProjectRelativePath(path);//截取当前项目路径
 		
 		UPAImage img = ScriptableObject.CreateInstance<UPAImage>();
 		AssetDatabase.CreateAsset (img, path);
 		
 		AssetDatabase.SaveAssets();
 		
-		img.Init(w, h);
+		img.Init(w, h);//新建一个空的UPAImage
 		EditorUtility.SetDirty(img);
 		UPAEditorWindow.CurrentImg = img;
 		
@@ -37,20 +43,26 @@ public class UPASession {
 		return img;
 	}
 
-	public static UPAImage OpenImage () {
+	public static UPAImage OpenImage ()
+    {
+        //打开操作系统的文件框来选择导入的图片或者.asset数据
 		string path = EditorUtility.OpenFilePanel(
 			"Find an Image (.asset | .png | .jpg)",
 			"Assets/",
 			"Image Files;*.asset;*.jpg;*.png");
 		
-		if (path.Length != 0) {
+		if (path.Length != 0)
+        {
 			// Check if the loaded file is an Asset or Image
-			if (path.EndsWith(".asset")) {
+            //如果是数据，直接反序列化即可
+			if (path.EndsWith(".asset"))
+            {
 				path = FileUtil.GetProjectRelativePath(path);
-				UPAImage img = AssetDatabase.LoadAssetAtPath(path, typeof(UPAImage)) as UPAImage;
+				UPAImage img = AssetDatabase.LoadAssetAtPath(path, typeof(UPAImage)) as UPAImage;//*.asset数据本身就是序列化的UPAImage
 				EditorPrefs.SetString ("currentImgPath", path);
 				return img;
 			}
+            //如果是图片,那么需要根据图片来构造UPAImage数据结构
 			else
 			{
 				// Load Texture from file
@@ -58,16 +70,22 @@ public class UPASession {
 				// Create a new Image with textures dimensions
 				UPAImage img = CreateImage(tex.width, tex.height);
 				// Set pixel colors
-				img.layers[0].tex = tex;
-				img.layers[0].tex.filterMode = FilterMode.Point;
-				img.layers[0].tex.Apply ();
-				for (int x = 0; x < img.width; x++)
+                if(img.layers!=null&&img.layers.Count>0)
                 {
-					for (int y = 0; y < img.height; y++)
+                    img.layers[0].tex = tex;
+                    img.layers[0].tex.filterMode = FilterMode.Point;
+                    img.layers[0].tex.Apply();
+                    for (int x = 0; x < img.width; x++)
                     {
-						img.layers[0].map[x + y * tex.width] = tex.GetPixel(x, tex.height - 1 - y);
-					}
-				}
+                        for (int y = 0; y < img.height; y++)
+                        {
+                            //map逻辑上是一个一维数组,可用二维的方式来访问。
+                            //一个图像按照左到右,上到下和map数组对应。
+                            //这样就可以根据屏幕的触摸坐标来直接获取map数组对应的像素
+                            img.layers[0].map[x + y * tex.width] = tex.GetPixel(x, tex.height - 1 - y);
+                        }
+                    }
+                }
 			}
 		}
 		

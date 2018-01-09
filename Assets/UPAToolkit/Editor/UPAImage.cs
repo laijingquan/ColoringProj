@@ -9,11 +9,16 @@ using UnityEditor;
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// UPAImage管理多个layer,每个layer负责各自的马赛克渲染
+/// </summary>
 [System.Serializable]
-public class UPAImage : ScriptableObject {
+public class UPAImage : ScriptableObject
+{
 
 	// HELPER GETTERS
-	private Rect window {
+	private Rect window
+    {
 		get { return UPAEditorWindow.window.position; }
 	}
 	
@@ -29,13 +34,17 @@ public class UPAImage : ScriptableObject {
 		get { return layers.Count; }
 	}
 
+    /// <summary>
+    /// 多个layer会合成一张图
+    /// </summary>
 	public Texture2D finalImg;
 
 	// VIEW & NAVIGATION SETTINGS
 
 	[SerializeField]
 	private float _gridSpacing = 20f;
-	public float gridSpacing {
+	public float gridSpacing
+    {
 		get { return _gridSpacing + 1f; }
 		set { _gridSpacing = Mathf.Clamp (value, 0, 140f); }
 	}
@@ -45,8 +54,10 @@ public class UPAImage : ScriptableObject {
 
 	//Make sure we always get a valid layer
 	private int _selectedLayer = 0;
-	public int selectedLayer {
-		get {
+	public int selectedLayer
+    {
+		get
+        {
 			return Mathf.Clamp(_selectedLayer, 0, layerCount);
 		}
 		set { _selectedLayer = value; }
@@ -71,7 +82,8 @@ public class UPAImage : ScriptableObject {
 	}
 
 	// This is not called in constructor to have more control
-	public void Init (int w, int h) {
+	public void Init (int w, int h)
+    {
 		width = w;
 		height = h;
 
@@ -83,8 +95,9 @@ public class UPAImage : ScriptableObject {
 		dirty = true;
 	}
 
-	// Color a certain pixel by position in window in a certain layer
-	public void SetPixelByPos (Color color, Vector2 pos, int layer) {
+	// Color a certain pixel by position in window in a certain layer(给某个layer在某个像素上画上特定的颜色)
+	public void SetPixelByPos (Color color, Vector2 pos, int layer)
+    {
 		Vector2 pixelCoordinate = GetPixelCoordinate (pos);
 
 		if (pixelCoordinate == new Vector2 (-1, -1))
@@ -99,20 +112,26 @@ public class UPAImage : ScriptableObject {
 	}
 
 	// Return a certain pixel by position in window
-	public Color GetPixelByPos (Vector2 pos, int layer) {
+	public Color GetPixelByPos (Vector2 pos, int layer)
+    {
 		Vector2 pixelCoordinate = GetPixelCoordinate (pos);
 
-		if (pixelCoordinate == new Vector2 (-1, -1)) {
+		if (pixelCoordinate == new Vector2 (-1, -1))
+        {
 			return Color.clear;
-		} else {
+		}
+        else
+        {
 			return layers[layer].GetPixel ((int)pixelCoordinate.x, (int)pixelCoordinate.y);
 		}
 	}
 
-	public Color GetBlendedPixel (int x, int y) {
+	public Color GetBlendedPixel (int x, int y)
+    {
 		Color color = Color.clear;
 
-		for (int i = 0; i < layers.Count; i++) {
+		for (int i = 0; i < layers.Count; i++)
+        {
 			if (!layers[i].enabled)
 				continue;
 
@@ -132,8 +151,10 @@ public class UPAImage : ScriptableObject {
 		return color;
 	}
 	
-	public void ChangeLayerPosition (int from, int to) {
-		if (from >= layers.Count || to >= layers.Count || from < 0 || to < 0) {
+	public void ChangeLayerPosition (int from, int to)
+    {
+		if (from >= layers.Count || to >= layers.Count || from < 0 || to < 0)
+        {
 			Debug.LogError ("Cannot ChangeLayerPosition, out of range.");
 			return;
 		}
@@ -146,7 +167,8 @@ public class UPAImage : ScriptableObject {
 	}
 
 	// Get the rect of the image as displayed in the editor
-	public Rect GetImgRect () {
+	public Rect GetImgRect ()
+    {
 		float ratio = (float)height / (float)width;
 		float w = gridSpacing * 30;
 		float h = ratio * gridSpacing * 30;
@@ -157,10 +179,12 @@ public class UPAImage : ScriptableObject {
 		return new Rect (xPos,yPos, w, h);
 	}
 
-	public Vector2 GetPixelCoordinate (Vector2 pos) {
+	public Vector2 GetPixelCoordinate (Vector2 pos)
+    {
 		Rect texPos = GetImgRect();
 			
-		if (!texPos.Contains (pos)) {
+		if (!texPos.Contains (pos))
+        {
 			return new Vector2(-1f,-1f);
 		}
 
@@ -173,7 +197,8 @@ public class UPAImage : ScriptableObject {
 		return new Vector2(pixelX, pixelY);
 	}
 	
-	public Vector2 GetReadablePixelCoordinate (Vector2 pos) {
+	public Vector2 GetReadablePixelCoordinate (Vector2 pos)
+    {
 		Vector2 coord = GetPixelCoordinate (pos);
 		
 		if (coord.x == -1)
@@ -184,7 +209,8 @@ public class UPAImage : ScriptableObject {
 		return coord;
 	}
 
-	public Texture2D GetFinalImage (bool update) {
+	public Texture2D GetFinalImage (bool update)
+    {
 
 		if (!dirty && finalImg != null || !update && finalImg != null)
 			return finalImg;
@@ -197,14 +223,17 @@ public class UPAImage : ScriptableObject {
 		return finalImg;
 	}
 
-	public void LoadAllTexsFromMaps () {
-		for (int i = 0; i < layers.Count; i++) {
+	public void LoadAllTexsFromMaps ()
+    {
+		for (int i = 0; i < layers.Count; i++)
+        {
 			if (layers[i].tex == null)
 				layers[i].LoadTexFromMap();
 		}
 	}
 
-	public void AddLayer () {
+	public void AddLayer ()
+    {
 		Undo.RecordObject (this, "AddLayer");
 		EditorUtility.SetDirty (this);
 		this.dirty = true;
@@ -213,13 +242,15 @@ public class UPAImage : ScriptableObject {
 		layers.Add(newLayer);
 	}
 
-	public void RemoveLayerAt (int index) {
+	public void RemoveLayerAt (int index)
+    {
 		Undo.RecordObject (this, "RemoveLayer");
 		EditorUtility.SetDirty (this);
 		this.dirty = true;
 
 		layers.RemoveAt (index);
-		if (selectedLayer == index) {
+		if (selectedLayer == index)
+        {
 			selectedLayer = index - 1;
 		}
 	}

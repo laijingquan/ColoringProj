@@ -15,10 +15,11 @@ public class UPALayer {
 	public BlendMode mode;
 	public bool locked;
 	
-	public UPAImage parentImg;
+	public UPAImage parentImg;//编辑器里有对某个layer Copy的功能,如果Copy多个，那么有个原始的layer就是它
 	
 	// Constructor
-	public UPALayer (UPAImage img) {
+	public UPALayer (UPAImage img)
+    {
 		name = "Layer " + (img.layers.Count + 1);
 		opacity = 1;
 		mode = BlendMode.NORMAL;
@@ -26,8 +27,10 @@ public class UPALayer {
 		map = new Color[img.width * img.height];
 		tex = new Texture2D (img.width, img.height);
 		
-		for (int x = 0; x < img.width; x++) {
-			for (int y = 0; y < img.height; y++) {
+		for (int x = 0; x < img.width; x++)
+        {
+			for (int y = 0; y < img.height; y++)
+            {
 				map[x + y * img.width] = Color.clear;
 				tex.SetPixel (x,y, Color.clear);
 			}

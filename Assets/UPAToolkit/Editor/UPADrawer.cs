@@ -45,21 +45,23 @@ public class UPADrawer : MonoBehaviour {
 		//Calculate the final image from the layers list
 		Texture2D _result = CalculateBlendedTex(img.layers);
 
-		//Draw the image
+		////Draw the image
 		_result.SetPixel(1, 1, Color.black);
 		GUI.DrawTexture(texPos, _result);
-	
-		// Draw a grid above the image (y axis first)
-		for (int x = 0; x <= img.width; x += 1) {
-			float posX = texPos.xMin + ( (float)texPos.width / (float)img.width ) * x - 0.2f;
-			EditorGUI.DrawRect (new Rect (posX, texPos.yMin, 1, texPos.height), gridBGColor);
-		}
-		// Then x axis
-		for (int y = 0; y <= img.height; y += 1) {
-			float posY = texPos.yMin + ( (float)texPos.height / (float)img.height ) * y - 0.2f;
-			EditorGUI.DrawRect (new Rect (texPos.xMin, posY, texPos.width, 1), gridBGColor);
-		}
-	}
+
+        //// Draw a grid above the image (y axis first)
+        for (int x = 0; x <= img.width; x += 1)
+        {
+            float posX = texPos.xMin + ((float)texPos.width / (float)img.width) * x - 0.2f;
+            EditorGUI.DrawRect(new Rect(posX, texPos.yMin, 1, texPos.height), gridBGColor);
+        }
+        //// Then x axis
+        for (int y = 0; y <= img.height; y += 1)
+        {
+            float posY = texPos.yMin + ((float)texPos.height / (float)img.height) * y - 0.2f;
+            EditorGUI.DrawRect(new Rect(texPos.xMin, posY, texPos.width, 1), gridBGColor);
+        }
+    }
 
 	// Calculates the blended image given a list of layers
 	public static Texture2D CalculateBlendedTex(List<UPALayer> _layers)
