@@ -21,12 +21,53 @@ public class CombineMesh : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         DoCombineMesh();
-	}
+        //DoCombine2();
+        //DoCombine3();
+    }
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+    void DoCombine2()
+    {
+        MeshFilter[] mfCHildren = GetComponentsInChildren<MeshFilter>();
+        CombineInstance[] combine = new CombineInstance[mfCHildren.Length];
+        for (int i = 0; i < mfCHildren.Length; i++)
+        {
+            Mesh meshCombine = mfCHildren[i].mesh;//贴图对应的mesh
+            combine[i].mesh = meshCombine;//赋予 “合并结构体”CombineInstance
+            combine[i].transform = mfCHildren[i].transform.localToWorldMatrix;
+            mfCHildren[i].gameObject.SetActive(false);
+        }
+
+        transform.GetComponent<MeshFilter>().mesh = new Mesh();
+        transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine);
+        transform.gameObject.SetActive(true);
+    }
+
+
+    void DoCombine3()
+    {
+        MeshFilter[] mfCHildren = GetComponentsInChildren<MeshFilter>();
+        CombineInstance[] combine = new CombineInstance[mfCHildren.Length];
+        MeshRenderer[] meshRenderer = GetComponentsInChildren<MeshRenderer>();
+        Material[] mats = new Material[meshRenderer.Length];
+        for (int i = 0; i < mfCHildren.Length; i++)
+        {
+            mats[i] = meshRenderer[i].sharedMaterial;//获取材质球列表
+            Mesh meshCombine = mfCHildren[i].mesh;//贴图对应的mesh
+            combine[i].mesh = meshCombine;//赋予 “合并结构体”CombineInstance
+            combine[i].transform = mfCHildren[i].transform.localToWorldMatrix;
+            mfCHildren[i].gameObject.SetActive(false);
+        }
+
+        transform.GetComponent<MeshFilter>().mesh = new Mesh();
+        transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine,false);
+        transform.gameObject.SetActive(true);
+        transform.GetComponent<MeshRenderer>().sharedMaterials = mats;
+    }
     /// <summary>
     /// 合并该gameObject下mesh,达到一个drawcall
     /// </summary>
@@ -63,7 +104,7 @@ public class CombineMesh : MonoBehaviour {
 
         Texture2D texture = new Texture2D(1024,1024);//新创一个贴图来合并所有小图
         materialNew.SetTexture("_MainTex", texture);//新材质使用这个新贴图
-        Rect[] rects = texture.PackTextures(textures, 10, 1024);//将多个贴图合并到新创建的贴图上
+        Rect[] rects = texture.PackTextures(textures, 0, 1024);//将多个贴图合并到新创建的贴图上
 
         for(int i =0; i < mfCHildren.Length;i++)
         {
@@ -76,8 +117,6 @@ public class CombineMesh : MonoBehaviour {
             Vector2[] uvs = new Vector2[meshCombine.uv.Length];//mesh的uv数组
             for(int j = 0; j < uvs.Length;j++)
             {
-                //这里感觉是计算了rect，除以贴图的长和宽能够得到0~1的值
-                //不过超过了1同样可以采样
                 uvs[j].x = rect.x + meshCombine.uv[j].x * rect.width;
                 uvs[j].y = rect.y + meshCombine.uv[j].y * rect.height;
             }
