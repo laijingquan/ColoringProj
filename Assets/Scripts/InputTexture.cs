@@ -6,29 +6,47 @@ using UnityEngine.EventSystems;
 public class InputTexture : MonoBehaviour {
 
     public Canvas canvas;
-    public RawImage image;
+    public Image image;
     public bool test;
+    public int VoxNumberTex;
 	// Use this for initialization
 	void Start ()
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        image = GetComponent<RawImage>();
+        image = GetComponent<Image>();
         //for(int i =0; i < 100;i++)
         //{
         //    Paint(new Vector2(i, 0));
         //}
         //Paint(new Vector2(0, 0));
         //Paint(new Vector2(100, 11));
+        NewVoxelTexture();
     }
 	
     void Paint(Vector2 pos)
     {
         if(image==null)
-            image = GetComponent<RawImage>();
+            image = GetComponent<Image>();
         if (image == null) return;
-        var tex = image.texture as Texture2D;
+        var tex = image.mainTexture as Texture2D;
+        image.SetNativeSize();
         tex.SetPixel((int)pos.x, (int)pos.y, Color.red);
         tex.Apply();
+    }
+
+    void NewVoxelTexture()
+    {
+        if (image == null)
+            image = GetComponent<Image>();
+        if (image == null) return;
+        string name = "Grayscale/" + VoxNumberTex + "PicGrey";
+        var tex = Resources.Load(name) as Texture2D;
+        var newTex = new Texture2D(tex.width, tex.height);
+        newTex.filterMode = FilterMode.Point;
+        newTex.SetPixels(tex.GetPixels());
+        image.SetTexture2D(newTex);
+        newTex.Apply();
+        image.SetNativeSize();
     }
 	// Update is called once per frame
 	void Update ()
