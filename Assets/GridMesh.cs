@@ -7,8 +7,13 @@ using UnityEngine;
 [RequireComponent(typeof(MeshFilter))]
 public class GridMesh : MonoBehaviour
 {
-	// Token: 0x0600000E RID: 14 RVA: 0x000021F8 File Offset: 0x000005F8
-	public void UpdateGrid()
+
+    public void Awake()
+    {
+        UpdateGrid();
+    }
+    // Token: 0x0600000E RID: 14 RVA: 0x000021F8 File Offset: 0x000005F8
+    public void UpdateGrid()
 	{
 		int gridSize = this._GridSize;
 		MeshFilter component = base.gameObject.GetComponent<MeshFilter>();
