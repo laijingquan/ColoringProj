@@ -7,20 +7,34 @@ public class InputTexture : MonoBehaviour {
 
     public Canvas canvas;
     public Image image;
+    public MeshRenderer mr;
     public bool test;
     public int VoxNumberTex;
+
+    public bool _Image;
+    public bool _MeshRenderer;
 	// Use this for initialization
 	void Start ()
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        image = GetComponent<Image>();
+        if(_Image)
+        {
+            image = GetComponent<Image>();
+            NewVoxelTextureForImage();
+
+        }
+        if (_MeshRenderer)
+        {
+            mr = GetComponent<MeshRenderer>();
+            NewVoxelTextureForMeshRenderer();
+        }
         //for(int i =0; i < 100;i++)
         //{
         //    Paint(new Vector2(i, 0));
         //}
         //Paint(new Vector2(0, 0));
         //Paint(new Vector2(100, 11));
-        NewVoxelTexture();
+        //NewVoxelTextureForImage();
     }
 	
     void Paint(Vector2 pos)
@@ -34,10 +48,20 @@ public class InputTexture : MonoBehaviour {
         tex.Apply();
     }
 
-    void NewVoxelTexture()
+    void NewVoxelTextureForMeshRenderer()
     {
-        if (image == null)
-            image = GetComponent<Image>();
+        if (mr == null) return;
+        string name = "Grayscale/" + VoxNumberTex + "PicGrey";
+        var tex = Resources.Load(name) as Texture2D;
+        var newTex = new Texture2D(tex.width, tex.height);
+        newTex.filterMode = FilterMode.Point;
+        newTex.SetPixels(tex.GetPixels());
+        newTex.Apply();
+        mr.material.mainTexture = newTex;
+    }
+
+    void NewVoxelTextureForImage()
+    {
         if (image == null) return;
         string name = "Grayscale/" + VoxNumberTex + "PicGrey";
         var tex = Resources.Load(name) as Texture2D;
