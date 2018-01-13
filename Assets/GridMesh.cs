@@ -47,7 +47,7 @@ public class GridMesh : MonoBehaviour
                 mesh.SetIndices(list2.ToArray(), MeshTopology.Lines, 0);
                 component.mesh = mesh;
             }
-            yield return wait;
+            //yield return wait;
         }
 		mesh.vertices = list.ToArray();
 		mesh.SetIndices(list2.ToArray(), MeshTopology.Lines, 0);
@@ -55,18 +55,18 @@ public class GridMesh : MonoBehaviour
 		MeshRenderer component2 = base.gameObject.GetComponent<MeshRenderer>();
 		component2.material = new Material(Shader.Find("Sprites/Default"));
 		component2.material.color = Color.black;
-        //yield return wait;
+        yield return wait;
     }
 
-    public void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        if (list == null) return;
-        for (int i = 0; i < list.Count; i++)
-        {
-            Gizmos.DrawSphere(list[i], 1f);
-        }
-    }
+    //public void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    if (list == null) return;
+    //    for (int i = 0; i < list.Count; i++)
+    //    {
+    //        Gizmos.DrawSphere(list[i], 1f);
+    //    }
+    //}
 
     // Token: 0x04000011 RID: 17
     [Range(1f, 10000f)]

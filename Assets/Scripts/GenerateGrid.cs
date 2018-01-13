@@ -55,15 +55,15 @@ public class GenerateGrid : MonoBehaviour {
         //yield return wait;
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.black;
-        if (vertices == null) return;
-        for(int i=0; i < vertices.Length;i++)
-        {
-            Gizmos.DrawSphere(vertices[i],0.1f);
-        }
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.black;
+    //    if (vertices == null) return;
+    //    for(int i=0; i < vertices.Length;i++)
+    //    {
+    //        Gizmos.DrawSphere(vertices[i],0.1f);
+    //    }
+    //}
     // Use this for initialization
     void Start () {
 	    
