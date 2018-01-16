@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(MeshFilter),typeof(MeshRenderer))]
-public class GenerateGrid : MonoBehaviour {
+[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
+public class NumberGrid : MonoBehaviour
+{
 
     public int xSize;//x方向有多少个四边形
     public int ySize;//y方向有多少个四边形
@@ -24,7 +25,7 @@ public class GenerateGrid : MonoBehaviour {
         {
             for (int x = 0; x <= xSize; x++, i++)
             {
-                vertices[i] = new Vector3(x, 0,y);
+                vertices[i] = new Vector3(x, 0, y);
                 uv[i] = new Vector2((float)x / xSize, (float)y / ySize);
             }
         }
@@ -33,15 +34,15 @@ public class GenerateGrid : MonoBehaviour {
         mesh.vertices = vertices;
         mesh.uv = uv;
 
-        mainTex = Resources.Load<Texture2D>("Grayscale/"+ mainTexID + "PicGrey");
+        mainTex = Resources.Load<Texture2D>("Grayscale/" + mainTexID + "PicGrey");
         mainTex.filterMode = FilterMode.Point;
         GetComponent<MeshRenderer>().material.mainTexture = mainTex;
 
 
-        int[] triangles = new int[xSize*ySize*6];//一个四边形有六个三角形索引
-        for(int y = 0,t = 0,v=0; y < ySize;y++,v++)
+        int[] triangles = new int[xSize * ySize * 6];//一个四边形有六个三角形索引
+        for (int y = 0, t = 0, v = 0; y < ySize; y++, v++)
         {
-            for (int x = 0; x < xSize; t += 6, x++,v++)
+            for (int x = 0; x < xSize; t += 6, x++, v++)
             {
                 triangles[0 + t] = 0 + v;
                 triangles[1 + t] = triangles[4 + t] = xSize + 1 + v;
@@ -67,12 +68,14 @@ public class GenerateGrid : MonoBehaviour {
     //    }
     //}
     // Use this for initialization
-    void Start () {
-	    
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
