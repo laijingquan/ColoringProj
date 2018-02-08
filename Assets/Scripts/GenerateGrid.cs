@@ -17,8 +17,9 @@ public class GenerateGrid : MonoBehaviour {
     public int[] triangles;
     private void Awake()
     {
-        //StartCoroutine(GenerateLine2())
-            GenerateLine2();
+        Init();
+        GenerateLine();
+            //GenerateLine2();
     }
 
     public bool add = false;
@@ -26,7 +27,8 @@ public class GenerateGrid : MonoBehaviour {
     {
         if(add)
         {
-            addSquad();
+            //addSquad();
+            GenerateLine();
             add = false;
         }
     }
@@ -135,7 +137,19 @@ public class GenerateGrid : MonoBehaviour {
         mesh.triangles = triangles;
     }
 
-    IEnumerator GenerateLine()
+    void Init()
+    {
+        GetComponent<MeshFilter>().mesh = mesh = new Mesh();
+        if (mainTex == null)
+        {
+            mainTex = Resources.Load<Texture2D>("Grayscale/" + mainTexID + "PicGrey");
+        }
+        GetComponent<MeshRenderer>().material.mainTexture = mainTex;
+    }
+
+    
+
+    void GenerateLine()
     {
         vertices = new Vector3[(xSize + 1) * (ySize + 1)];
         uv = new Vector2[vertices.Length];
@@ -145,20 +159,12 @@ public class GenerateGrid : MonoBehaviour {
             {
                 vertices[i] = new Vector3(x, 0, y);
                 uv[i] = new Vector2(x%2,y);
-                yield return wait;
+                //yield return wait;
             }
         }
-
-        GetComponent<MeshFilter>().mesh = mesh = new Mesh();
+        mesh.Clear();
         mesh.vertices = vertices;
         mesh.uv = uv;
-
-        if(mainTex==null)
-        {
-            mainTex = Resources.Load<Texture2D>("Grayscale/" + mainTexID + "PicGrey");
-        }
-        mainTex.filterMode = FilterMode.Point;
-        GetComponent<MeshRenderer>().material.mainTexture = mainTex;
 
 
         triangles = new int[xSize * ySize * 6];//一个四边形有六个三角形索引
@@ -170,12 +176,11 @@ public class GenerateGrid : MonoBehaviour {
                 triangles[1 + t] = triangles[4 + t] = xSize + 1 + v;
                 triangles[2 + t] = triangles[3 + t] = 1 + v;
                 triangles[5 + t] = xSize + 2 + v;
-                yield return wait;
+                //yield return wait;
                 mesh.triangles = triangles;
             }
             Debug.Log("一行");
         }
-
         mesh.triangles = triangles;
     }
 
